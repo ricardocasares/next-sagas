@@ -1,7 +1,8 @@
 import { system } from "styled-system";
 
-export const space = system({
-  space: {
+export type StackSpacingProps = { stackSpacing?: number | number[] };
+export const stackSpacing = system({
+  stackSpacing: {
     property: "marginTop",
   },
 });

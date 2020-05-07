@@ -6,11 +6,11 @@ const SPACING = [10, 15, 20];
 
 export default () => (
   <Stack
-    borderRadius="5px"
-    border="2px solid #ccc"
-    space={SPACING}
     margin={SPACING}
     padding={SPACING}
+    stackSpacing={SPACING}
+    borderRadius="5px"
+    border="2px solid #ccc"
   >
     <Counter />
     <Counter />
