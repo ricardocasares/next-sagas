@@ -1,28 +1,37 @@
 {
   "name": "next-sagas",
   "version": "1.0.0",
+  "license": "ISC",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "dev": "next",
     "start": "next start",
-    "type-check": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "type-check": "tsc"
   },
   "dependencies": {
+    "@emotion/cache": "11.0.0-next.12",
+    "@emotion/css": "11.0.0-next.12",
+    "@emotion/react": "11.0.0-next.12",
+    "@emotion/server": "11.0.0-next.12",
+    "@emotion/styled": "11.0.0-next.12",
     "classcat": "^4.0.2",
+    "facepaint": "^1.2.1",
     "next": "^9.3.2",
     "next-redux-saga": "^4.1.2",
     "next-redux-wrapper": "^5.0.0",
     "preact": "^10.2.1",
     "preact-render-to-string": "^5.1.4",
-    "react": "latest",
-    "react-dom": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
-    "redux-saga": "^1.1.3"
+    "redux-saga": "^1.1.3",
+    "ui-box": "^3.2.0"
   },
   "devDependencies": {
     "@testing-library/react": "^10.0.4",
+    "@types/facepaint": "^1.2.1",
     "@types/jest": "^25.2.1",
     "@types/next-redux-saga": "^3.0.2",
     "@types/node": "^12.12.21",
@@ -30,9 +39,7 @@
     "@types/react-dom": "^16.9.4",
     "babel-jest": "^25.2.0",
     "babel-plugin-module-resolver": "^4.0.0",
-    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "typescript": "3.7.3"
-  },
-  "license": "ISC"
+  }
 }

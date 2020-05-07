@@ -1,13 +1,14 @@
-import "@/css/app.css";
-
 import React, { useEffect, FunctionComponent as F } from "react";
-import { Provider } from "react-redux";
+import { cache } from "@emotion/css";
+import { Provider as ReduxProvider } from "react-redux";
+import { CacheProvider as EmotionProvider } from "@emotion/react";
 import withRedux from "next-redux-wrapper";
 import withReduxSaga from "next-redux-saga";
 
 import { AppProps } from "@/types";
 import { configureStore } from "@/store";
 import { clientReady } from "@/modules/app";
+import { globalCss } from "@/css/global";
 
 const App: F<AppProps> = ({ store, pageProps, Component }) => {
   useEffect(() => {
@@ -15,9 +16,12 @@ const App: F<AppProps> = ({ store, pageProps, Component }) => {
   }, []);
 
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
+    <EmotionProvider value={cache}>
+      {globalCss}
+      <ReduxProvider store={store}>
+        <Component {...pageProps} />
+      </ReduxProvider>
+    </EmotionProvider>
   );
 };
 
