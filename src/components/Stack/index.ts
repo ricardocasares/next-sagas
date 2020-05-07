@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { stackSpacing, StackSpacingProps } from "@/css/props";
+import { stackSpacing, StackSpacingProps } from "@/css/system";
 import { Box } from "@/components/Box";
 
 export type Stack = StackSpacingProps & Box;
