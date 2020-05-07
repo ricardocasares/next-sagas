@@ -1,7 +1,7 @@
 {
   "name": "next-sagas",
   "version": "1.0.0",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "build": "next build",
     "dev": "next",
