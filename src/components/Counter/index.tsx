@@ -1,18 +1,20 @@
 import React, { FunctionComponent as F } from "react";
-import { Stack } from "@/components/Stack";
+import { Box } from "@/components/Box";
+import { Button } from "@/components/Button";
+import { P } from "./styles";
 
-type Counter = {
+export type Counter = {
   count: number;
   increment: () => void;
 };
 
 export const Counter: F<Counter> = ({ count, increment }) => (
-  <Stack background="#ddd" padding={5}>
-    <p>
+  <Box padding={[10, 15, 20]} border="2px solid #ccc" borderRadius={5}>
+    <P>
       Count <span data-testid="count">{count}</span>
-    </p>
-    <button data-testid="increment" onClick={increment}>
+    </P>
+    <Button data-testid="increment" onClick={increment}>
       Increment
-    </button>
-  </Stack>
+    </Button>
+  </Box>
 );

@@ -10,12 +10,9 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@emotion/cache": "11.0.0-next.12",
-    "@emotion/css": "11.0.0-next.12",
-    "@emotion/react": "11.0.0-next.12",
-    "@emotion/server": "11.0.0-next.12",
-    "@emotion/styled": "11.0.0-next.12",
-    "classcat": "^4.0.2",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "emotion-normalize": "^10.1.0",
     "facepaint": "^1.2.1",
     "next": "^9.3.2",
     "next-redux-saga": "^4.1.2",
@@ -27,7 +24,7 @@
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-saga": "^1.1.3",
-    "ui-box": "^3.2.0"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@testing-library/react": "^10.0.4",
@@ -37,6 +34,7 @@
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "@types/styled-system": "^5.1.9",
     "babel-jest": "^25.2.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "jest": "^26.0.1",
