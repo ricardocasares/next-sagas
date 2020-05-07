@@ -1,8 +1,34 @@
 .stack {
-  padding: var(--gutter);
-  border: 1px solid var(--color-gray-200);
+  --stack-gutter: var(--gutter);
+}
+
+.stack.full {
+  height: 100%;
+}
+
+.stack.flex {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.stack.padded {
+  padding: var(--stack-gutter);
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .stack > * + * {
-  margin-top: var(--gutter);
+  margin-top: var(--stack-gutter);
+}
+
+.stack.small {
+  --stack-gutter: 5px;
+}
+
+.stack.large {
+  --stack-gutter: 25px;
 }

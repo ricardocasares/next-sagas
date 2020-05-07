@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import { Counter } from "./index";
 
-test("shows the count and a button", async () => {
+test("shows the count and a button", () => {
   const count = 10;
   const increment = jest.fn();
 
