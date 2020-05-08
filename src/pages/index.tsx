@@ -5,7 +5,7 @@ import { Counter } from "@/modules/counter/containers/Counter";
 const SPACING = [10, 15, 20];
 
 export default () => (
-  <Stack padding={SPACING} stackSpacing={SPACING}>
+  <Stack p={SPACING} stackSpacing={SPACING}>
     <Counter />
     <Counter />
     <Counter />
