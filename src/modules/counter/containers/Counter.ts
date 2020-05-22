@@ -7,5 +7,4 @@ import { Counter as Component } from "@/components/Counter";
 
 const props = ({ counter: { count } }: State) => ({ count });
 const actions = (d: Dispatch) => bind({ increment }, d);
-
 export const Counter = connect(props, actions)(Component);
